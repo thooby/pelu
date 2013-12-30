@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Sale:</strong>
+  <%= @sale_item.sale_id %>
+</p>
+
+<p>
+  <strong>Item:</strong>
+  <%= @sale_item.item_id %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @sale_item.description %>
+</p>
+
+<p>
+  <strong>Line:</strong>
+  <%= @sale_item.line %>
+</p>
+
+<p>
+  <strong>Quantity-purchased:</strong>
+  <%= @sale_item.quantity-purchased %>
+</p>
+
+<p>
+  <strong>Item cost price:</strong>
+  <%= @sale_item.item_cost_price %>
+</p>
+
+<p>
+  <strong>Item unit price:</strong>
+  <%= @sale_item.item_unit_price %>
+</p>
+
+<p>
+  <strong>Discount percent:</strong>
+  <%= @sale_item.discount_percent %>
+</p>
+
+<%= link_to 'Edit', edit_sale_item_path(@sale_item) %> |
+<%= link_to 'Back', sale_items_path %>

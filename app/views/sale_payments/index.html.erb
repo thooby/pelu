@@ -1,0 +1,31 @@
+<h1>Listing sale_payments</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Sale</th>
+      <th>Payment type</th>
+      <th>Payment amount</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @sale_payments.each do |sale_payment| %>
+      <tr>
+        <td><%= sale_payment.sale_id %></td>
+        <td><%= sale_payment.payment_type %></td>
+        <td><%= sale_payment.payment_amount %></td>
+        <td><%= link_to 'Show', sale_payment %></td>
+        <td><%= link_to 'Edit', edit_sale_payment_path(sale_payment) %></td>
+        <td><%= link_to 'Destroy', sale_payment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Sale payment', new_sale_payment_path %>

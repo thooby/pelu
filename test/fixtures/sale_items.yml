@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  sale_id: 1
+  item_id: 1
+  description: MyString
+  line: 1
+  quantity-purchased: 9.99
+  item_cost_price: 9.99
+  item_unit_price: 9.99
+  discount_percent: 9.99
+
+two:
+  sale_id: 1
+  item_id: 1
+  description: MyString
+  line: 1
+  quantity-purchased: 9.99
+  item_cost_price: 9.99
+  item_unit_price: 9.99
+  discount_percent: 9.99
